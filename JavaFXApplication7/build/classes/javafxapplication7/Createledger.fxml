@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #ffffff; -fx-border-width: 30; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1210.0" layoutX="21.0" layoutY="-17.0" opacity="0.3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Icons/Powerpoint-Templates-PPT-Waves.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="___" textFill="WHITE" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="900.0" layoutY="8.0" onAction="#back" prefHeight="21.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="833.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELP" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXHamburger layoutX="588.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXButton layoutX="1017.0" layoutY="577.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#ledgersubmit" prefHeight="95.0" prefWidth="154.0" style="-fx-background-color: #c9c9c9; -fx-border-color: #000000; -fx-border-width: 2;" text="SUBMIT" AnchorPane.bottomAnchor="28.0" />
+      <Label layoutX="159.0" layoutY="248.0" text="Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nam" layoutX="273.0" layoutY="244.0" onKeyReleased="#namevalid" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ob" layoutX="362.0" layoutY="572.0" onKeyReleased="#obvalid" prefHeight="40.0" prefWidth="197.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXComboBox fx:id="gro" focusColor="#0029a4" labelFloat="true" layoutX="422.0" layoutY="126.0" onAction="#groupselected" prefHeight="77.0" prefWidth="379.0" promptText="SELECT GROUP" unFocusColor="RED" />
+      <Label layoutX="161.0" layoutY="328.0" text="Address">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="787.0" layoutY="255.0" text="A/c No.">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="ad" disable="true" layoutX="278.0" layoutY="315.0" prefHeight="47.0" prefWidth="233.0" style="-fx-border-color: #000000;" />
+      <Label layoutX="798.0" layoutY="380.0" text="Branch">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ac" disable="true" layoutX="907.0" layoutY="254.0" onKeyReleased="#acvalid" prefHeight="40.0" prefWidth="174.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bra" disable="true" layoutX="910.0" layoutY="381.0" onKeyReleased="#branchvalid" prefHeight="40.0" prefWidth="171.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="805.0" layoutY="310.0" text="IFSC">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="isc" disable="true" layoutX="904.0" layoutY="315.0" onKeyReleased="#ifscvalid" prefHeight="40.0" prefWidth="174.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXTextField fx:id="gin" alignment="CENTER" disable="true" layoutX="201.0" layoutY="453.0" onKeyReleased="#gstinvalid" prefHeight="68.0" prefWidth="309.0" promptText="GSTIN" unFocusColor="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="pan" alignment="CENTER" disable="true" layoutX="794.0" layoutY="465.0" onKeyReleased="#panvalid" prefHeight="61.0" prefWidth="281.0" promptText="PAN" unFocusColor="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="sta" disable="true" focusColor="#30478d" layoutX="284.0" layoutY="396.0" prefHeight="41.0" prefWidth="239.0" promptText="                  select state here" />
+    
+      
+      <Label layoutX="163.0" layoutY="398.0" text="State">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="575.0" text="Opening Balance">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Text fill="#e40303" layoutX="315.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE LEDGER" wrappingWidth="577.0">
+         <font>
+            <Font name="Century Schoolbook" size="64.0" />
+         </font>
+      </Text>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="30.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>

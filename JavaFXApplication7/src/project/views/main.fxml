@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #343638; -fx-border-color: #000000; -fx-border-width: 30;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="_" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="825.0" layoutY="6.0" prefHeight="21.0" prefWidth="47.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="78.0" layoutY="207.0" onAction="#move" onMouseClicked="#move" prefHeight="200.0" prefWidth="260.0" style="-fx-background-image: url('Icons/ledger.jpg'); -fx-background-color: #5cadd6;" textFill="#5cadd6">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#00c8ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="369.0" layoutY="205.0" onAction="#gotoinven" prefHeight="200.0" prefWidth="260.0" style="-fx-background-color: #e5ad29; -fx-background-image: url('Icons/inventory.jpg');" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f5b92c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="665.0" layoutY="206.0" onAction="#gosale" prefHeight="200.0" prefWidth="260.0" style="-fx-background-image: url('Icons/vouchers.jpg'); -fx-background-color: #73b22a;" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#20b95a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="78.0" layoutY="434.0" onAction="#gogst" prefHeight="200.0" prefWidth="260.0" style="-fx-background-image: url('Icons/gst.jpg'); -fx-background-color: #c14969;" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#ff5a8b" />
+                  <Stop color="#ff5a8b" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="374.0" layoutY="433.0" onAction="#Balance" prefHeight="200.0" prefWidth="260.0" style="-fx-background-color: #7e66d6; -fx-background-image: url('Icons/report.jpg');" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#ff5a8b" />
+                  <Stop color="#c55cff" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="667.0" layoutY="433.0" onAction="#docal" prefHeight="200.0" prefWidth="260.0" style="-fx-background-color: #00adaa; -fx-background-image: url('Icons/calculator.jpg');" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXHamburger layoutX="888.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXButton layoutX="750.0" layoutY="2.0" onAction="#help" text="HELP" textFill="WHITE" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#7df0c0" layoutX="66.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tex Line Industries">
+         <font>
+            <Font name="Bradley Hand Bold" size="90.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="WHITE" layoutX="80.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GSTIN : 07AADFG1324J1ZP">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="80.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turnover(2016-17) : Rs 3,145,266">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="128.0" fitWidth="236.0" layoutX="965.0" layoutY="35.0">
+         <image>
+            <Image url="@../Icons/LOGO.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="81.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address : 2904/11 Ramphal Square, Sadar Bazaar New Delhi-110006">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#e5ff00" layoutX="849.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@GST STOCKER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="640.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="208.0" onAction="#disl" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="CLIENTS" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="277.0" onAction="#disst" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="STOCKS" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="343.0" onAction="#diss" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="SALES" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="406.0" onAction="#dispu" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="PURCHASE" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="469.0" onAction="#disp" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="PAYMENTS" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="955.0" layoutY="532.0" onAction="#disr" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="RECEIPT" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="525.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone: 23550124, 65968698">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="525.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: texline1991@gmail.com">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="30.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="30.0" AnchorPane.bottomAnchor="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="956.0" layoutY="592.0" onAction="#dispro" prefHeight="36.0" prefWidth="260.0" style="-fx-background-color: #fbc0c0;" text="PROFIT ANALYSIS" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.4943820224719101" centerY="0.47115384615384615" radius="0.44047619047619047">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

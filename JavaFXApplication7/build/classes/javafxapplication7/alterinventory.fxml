@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #ffffff; -fx-border-width: 30; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1210.0" layoutX="153.0" layoutY="222.0" opacity="0.3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Icons/Powerpoint-Templates-PPT-Waves.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="___" textFill="WHITE" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="815.0" layoutY="5.0" onAction="#back" prefHeight="21.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="766.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELP" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXHamburger layoutX="588.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXButton layoutX="1019.0" layoutY="525.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#updateinventory" prefHeight="100.0" prefWidth="159.0" style="-fx-background-color: #c9c9c9; -fx-border-color: #000000; -fx-border-width: 2;" text="SUBMIT" />
+      <Label layoutX="106.0" layoutY="170.0" text="Stock">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="176.0" text="Units">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="unit" layoutX="666.0" layoutY="168.0" onKeyReleased="#unitvalid" prefHeight="44.0" prefWidth="109.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="184.0" layoutY="265.0" text="GST">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="tog" layoutX="243.0" layoutY="260.0" onAction="#radioenable" text="." textFill="WHITE" />
+      <Label layoutX="875.0" layoutY="175.0" text="HSN">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hsn" layoutX="961.0" layoutY="171.0" onKeyReleased="#hsnvalid" prefHeight="44.0" prefWidth="218.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <JFXRadioButton id="r1" fx:id="tax" disable="true" layoutX="443.0" layoutY="320.0" onAction="#gst" prefHeight="50.0" prefWidth="184.0" text="." textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="a" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton id="r2" fx:id="exempt" disable="true" layoutX="445.0" layoutY="432.0" onAction="#nogst" prefHeight="40.0" prefWidth="145.0" text="+" textFill="WHITE" toggleGroup="$a" />
+      <Label layoutX="329.0" layoutY="325.0" text="Taxable">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="431.0" text="Exempted">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="716.0" layoutY="325.0" text="IGST">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="385.0" text="CESS">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="ig" disable="true" layoutX="777.0" layoutY="337.0" onAction="#igstt" text="." textFill="WHITE" />
+      <JFXCheckBox fx:id="ce" disable="true" layoutX="779.0" layoutY="396.0" onAction="#cest" prefHeight="0.0" prefWidth="38.0" text="." textFill="WHITE" />
+      <TextField fx:id="igs" disable="true" layoutX="862.0" layoutY="329.0" onKeyReleased="#igsvalid" prefHeight="40.0" prefWidth="98.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ces" disable="true" layoutX="861.0" layoutY="384.0" onKeyReleased="#cessvalid" prefHeight="40.0" prefWidth="98.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="186.0" layoutY="512.0" text="Opening Balance :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="575.0" text="Quantity">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="575.0" text="Rate">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lqty" layoutX="445.0" layoutY="577.0" onKeyReleased="#qtyvalid" prefHeight="40.0" prefWidth="68.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lrate" layoutX="795.0" layoutY="578.0" onKeyReleased="#ratevalid" prefHeight="40.0" prefWidth="77.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#dd2a2a" layoutX="442.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALTER STOCK" wrappingWidth="557.349365234375">
+         <font>
+            <Font size="73.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="altername" layoutX="193.0" layoutY="169.0" onAction="#inventoryretrieve" onMouseMoved="#inventoryretrieve" prefHeight="47.0" prefWidth="251.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="31.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>

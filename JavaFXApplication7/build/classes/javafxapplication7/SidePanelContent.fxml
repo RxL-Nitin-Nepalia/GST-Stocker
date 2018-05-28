@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="box" prefHeight="660.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.hamcontrol">
+   <children>
+      <Button mnemonicParsing="false" onAction="#gosale" prefHeight="50.0" prefWidth="181.0" text="SALE" />
+      <Button mnemonicParsing="false" onAction="#gopurchase" prefHeight="50.0" prefWidth="181.0" text="PURCHASE" />
+      <Button mnemonicParsing="false" onAction="#gopayment" prefHeight="50.0" prefWidth="181.0" text="PAYMENT" />
+      <Button mnemonicParsing="false" onAction="#goreceipt" prefHeight="50.0" prefWidth="181.0" text="RECEIPT" />
+      <Button mnemonicParsing="false" onAction="#goalterledger" prefHeight="50.0" prefWidth="181.0" text="ALTER LEDGER" />
+      <Button mnemonicParsing="false" onAction="#goalterinventory" prefHeight="50.0" prefWidth="181.0" text="ALTER INVENTORY" />
+      <Button mnemonicParsing="false" onAction="#go1" prefHeight="50.0" prefWidth="181.0" text="CLIENTS" />
+      <Button mnemonicParsing="false" onAction="#go2" prefHeight="50.0" prefWidth="181.0" text="STOCKS" />
+      <Button mnemonicParsing="false" onAction="#go3" prefHeight="50.0" prefWidth="180.0" text="DISPLAY SALES" />
+      <Button mnemonicParsing="false" onAction="#go4" prefHeight="52.0" prefWidth="180.0" text="DISPLAY PURCHASE" />
+      <Button mnemonicParsing="false" onAction="#go6" prefHeight="52.0" prefWidth="180.0" text="DISPLAY PAYMENTS" />
+      <Button mnemonicParsing="false" onAction="#go5" prefHeight="52.0" prefWidth="180.0" text="DISPLAY RECEIPTS" />
+      <Button mnemonicParsing="false" onAction="#go7" prefHeight="52.0" prefWidth="180.0" text="PROFIT ANALYSIS" />
+      <Button mnemonicParsing="false" onAction="#go8" prefHeight="50.0" prefWidth="181.0" text="CALCULATOR" />
+   </children>
+</VBox>

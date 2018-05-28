@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #343638; -fx-border-color: #000000; -fx-border-width: 30;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="___" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="825.0" layoutY="6.0" onAction="#back" prefHeight="21.0" prefWidth="47.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <JFXHamburger layoutX="888.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <ImageView fitHeight="128.0" fitWidth="236.0" layoutX="995.0" layoutY="35.0">
+         <image>
+            <Image url="@../Icons/LOGO.jpg" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="30.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="30.0" />
+      <Text fill="WHITE" layoutX="154.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the  GST Stocker ,an efficient desktop application for simple and easy handling of trading related data. The application is made for a businessman who can add his/her clients,stocks and all kinds of transactions related to their trading. The Unique function of GSTR makes it really easy for the user to get the different types of monthly/yearly tax returns which gets automatically filled up by the application using their existing data. The application also has the functionality of displaying the Balance Sheet including all liabilities and assets of the business for a concise look at what overall is going on in his current business. Also for one tap look at just the status of the company Profit Analysis displays the Net Profit for the company including all transactions and other incomes and expenses. An additional feature of calculator is also provided for the user's quick access to any sort of computation.                                                                                                                                                                                 HAPPY STOCKING" textAlignment="JUSTIFY" wrappingWidth="934.041015625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#1fbfbe" layoutX="313.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABOUT THE APP">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

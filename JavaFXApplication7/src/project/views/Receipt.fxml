@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #ffffff; -fx-border-width: 30; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1210.0" layoutX="11.0" layoutY="58.0" opacity="0.3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Icons/Powerpoint-Templates-PPT-Waves.jpg" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="31.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="180.0" />
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="___" textFill="WHITE" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="816.0" layoutY="4.0" onAction="#back" prefHeight="21.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="985.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELP" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXHamburger layoutX="588.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXDatePicker fx:id="padate" defaultColor="#e4b200" layoutX="484.0" layoutY="176.0" prefHeight="46.0" prefWidth="391.0" promptText="Select Date" style="-fx-text-inner-color-: #ffffff;" AnchorPane.leftAnchor="484.0" />
+      <JFXTextArea fx:id="panarr" layoutX="106.0" layoutY="533.0" prefHeight="56.0" prefWidth="400.0" promptText="Narration" text="Narration ::" AnchorPane.leftAnchor="106.0">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextArea>
+      <TextField fx:id="paamount" layoutX="561.0" layoutY="443.0" onKeyReleased="#pamountvalid" prefHeight="75.0" prefWidth="256.0" promptText="Amount" />
+      <JFXButton layoutX="932.0" layoutY="539.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#receiptsubmit" prefHeight="75.0" prefWidth="155.0" style="-fx-background-color: #c9c9c9; -fx-border-color: #000000; -fx-border-width: 2;" text="SUBMIT" />
+      <JFXComboBox fx:id="paby" layoutX="268.0" layoutY="267.0" prefHeight="61.0" prefWidth="266.0" promptText="BY" />
+      <JFXComboBox fx:id="pato" layoutX="779.0" layoutY="273.0" prefHeight="61.0" prefWidth="266.0" promptText="TO" />
+      <Text fill="#4fc34d" layoutX="533.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEIPT">
+         <font>
+            <Font name="Apple Chancery" size="75.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

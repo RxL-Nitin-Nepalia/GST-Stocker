@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="749.0" prefWidth="1288.0" style="-fx-background-color: #343638; -fx-border-color: #000000; -fx-border-width: 30;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1240.0" layoutX="60.0" layoutY="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Icons/57fa20420b1aee47b6f59089ae5f41db.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" layoutX="30.0" layoutY="5.0" onAction="#close" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="X" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="54.0" layoutY="5.0" onAction="#mini" prefHeight="21.0" prefWidth="21.0" ripplerFill="WHITE" style="-fx-background-color: #f4b000;" text="--" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="8.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="825.0" layoutY="6.0" onAction="#back" prefHeight="21.0" prefWidth="47.0" ripplerFill="WHITE" style="-fx-background-color: #06cc0c;" text="HOME" textFill="WHITE" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <JFXHamburger layoutX="888.0" layoutY="6.0" onMouseClicked="#ham" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXButton layoutX="750.0" layoutY="2.0" onAction="#help" text="HELP" textFill="WHITE" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" layoutX="30.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="30.0" />
+      <Label layoutX="455.0" layoutY="29.0" prefHeight="64.0" prefWidth="488.0" text="BALANCE SHEET">
+         <font>
+            <Font name="Cochin" size="51.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablel1" layoutX="178.0" layoutY="182.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="120.0" />
+      <TableView fx:id="tablea3" layoutX="890.0" layoutY="515.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="480.0" />
+      <TableView fx:id="tablel3" layoutX="178.0" layoutY="518.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="480.0" />
+      <TableView fx:id="tablea1" layoutX="864.0" layoutY="190.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="120.0" />
+      <TableView fx:id="tablea2" layoutX="901.0" layoutY="351.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="300.0" />
+      <TableView fx:id="tablel2" layoutX="178.0" layoutY="349.0" prefHeight="132.0" prefWidth="400.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="300.0" />
+      <Text layoutX="227.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIABILTIES">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="939.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASSETS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="467.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;---Current Liabilties">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="602.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Assets---&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="466.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;---Supplies">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="463.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;---Indirect Expenses">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="664.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incomes---&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#270754" layoutX="678.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyers---&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="l1" layoutX="278.0" layoutY="280.0" prefHeight="31.0" prefWidth="168.0" text="Label" textFill="#3e0a61" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="1006.0" layoutY="310.0" prefHeight="31.0" prefWidth="182.0" text="Label" textFill="#3e0a61" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="272.0" layoutY="641.0" prefHeight="31.0" prefWidth="218.0" text="Label" textFill="#3e0a61" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="610.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="284.0" layoutY="490.0" prefHeight="31.0" prefWidth="197.0" text="Label" textFill="#3e0a61" AnchorPane.topAnchor="430.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="1003.0" layoutY="490.0" prefHeight="31.0" prefWidth="182.0" text="Label" textFill="#3e0a61" AnchorPane.topAnchor="430.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="1042.0" layoutY="643.0" prefHeight="31.0" prefWidth="197.0" text="Label" textFill="#3e0a61" AnchorPane.leftAnchor="980.0" AnchorPane.topAnchor="610.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb" layoutX="245.0" layoutY="667.0" prefHeight="31.0" prefWidth="324.0" text="Label" textFill="#3e0a61">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lc" layoutX="712.0" layoutY="668.0" prefHeight="31.0" prefWidth="298.0" text="Label" textFill="#3e0a61">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
